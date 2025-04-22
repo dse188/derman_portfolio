@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUnity, FaCodeBranch, FaChartLine, FaUsers } from 'react-icons/fa';
+import { FaUnity, FaRocket, FaUsers, FaChartLine, FaCode } from 'react-icons/fa';
 
 const Experience = () => {
   return (
@@ -28,7 +28,19 @@ const Experience = () => {
             <div>
               <h4 className="text-lg font-semibold text-white">Game Development</h4>
               <p className="text-gray-300">
-                Contributed to the development of Twenty Ninety Creative's Dead Flamingo, implementing new gameplay mechanics
+                Developed gameplay systems for "Dead Flamingo" using Unity and C#, focusing on player mechanics and enemy AI
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="text-blue-400 mt-1 mr-4">
+              <FaRocket className="text-xl" />
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-white">Rapid Prototyping</h4>
+              <p className="text-gray-300">
+                Created multiple vertical slice prototypes, iterating quickly based on playtesting feedback and technical constraints
               </p>
             </div>
           </div>
@@ -38,21 +50,9 @@ const Experience = () => {
               <FaChartLine className="text-xl" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-white">Market Research</h4>
+              <h4 className="text-lg font-semibold text-white">Data-Driven Design</h4>
               <p className="text-gray-300">
-                Conducted market research by analyzing trends to shape Dead Flamingo's features
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start">
-            <div className="text-blue-400 mt-1 mr-4">
-              <FaCodeBranch className="text-xl" />
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-white">Rapid Prototyping</h4>
-              <p className="text-gray-300">
-                Contributed to the development of undisclosed vertical slice projects with emphasis on rapid prototyping and testing in Unity
+                Conducted market analysis and player research to inform feature development, balancing creative vision with market trends
               </p>
             </div>
           </div>
@@ -62,9 +62,9 @@ const Experience = () => {
               <FaUsers className="text-xl" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-white">Agile Development</h4>
+              <h4 className="text-lg font-semibold text-white">Agile Collaboration</h4>
               <p className="text-gray-300">
-                Actively engaged in Scrum meetings to coordinate tasks, track progress, identify problems and strategize for efficient development
+                Participated in daily scrums and sprint planning, adapting development priorities based on team feedback and production needs
               </p>
             </div>
           </div>
