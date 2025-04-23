@@ -1,7 +1,26 @@
 import React from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Contacts = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+      navigate("/success"); // This will redirect to the success page
+    } catch (error) {
+      alert("Error submitting form. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="py-16 px-4 max-w-6xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
@@ -21,11 +40,15 @@ const Contacts = () => {
             method="POST" 
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
             className="space-y-6"
-            netlify
           >
             <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
+            <p className="hidden">
+              <label>
+                Don't fill this out if you're human: <input name="bot-field" />
+              </label>
+            </p>
             
             <div>
               <label htmlFor="email" className="block text-gray-300 mb-2">Your Email</label>
