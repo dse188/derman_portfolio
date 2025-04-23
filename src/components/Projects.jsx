@@ -78,6 +78,18 @@ const ProjectCard = ({
 
 const Projects = () => {
   const projects = [
+    
+    {
+      title: "Neon Vendetta",
+      description: "A story-driven 2D platformer with meticulously crafted levels where narrative and gameplay intertwine to create an immersive experience.",
+      image: NeonVendetta,
+      projectLink: "https://mamemor.itch.io/neon-vendetta",
+      features: [
+        "Emphasis on <strong class='text-blue-400'>complex level design</strong> and storytelling",
+        "Integrating <strong class='text-blue-400'>data-driven UI</strong> features",
+        "Implementing <strong class='text-blue-400'>unique physics</strong> for movement"
+      ]
+    },
     {
       title: "Zenith Spire",
       description: "A Vampire Survivors-inspired roguelike with procedural enemy swarms, deep ability customization, and chaotic combat—built in Unity with C#.",
@@ -88,17 +100,6 @@ const Projects = () => {
         "Applying <strong class='text-blue-400'>C# interfaces</strong> to enhance modularity",
         "Implementing a <strong class='text-blue-400'>custom ability system</strong> for upgrades",
         "Focus on <strong class='text-blue-400'>procedural generation</strong> and dynamic combat"
-      ]
-    },
-    {
-      title: "Neon Vendetta",
-      description: "A story-driven 2D platformer with meticulously crafted levels where narrative and gameplay intertwine to create an immersive experience.",
-      image: NeonVendetta,
-      projectLink: "https://mamemor.itch.io/neon-vendetta",
-      features: [
-        "Emphasis on <strong class='text-blue-400'>complex level design</strong> and storytelling",
-        "Integrating <strong class='text-blue-400'>data-driven UI</strong> features",
-        "Implementing <strong class='text-blue-400'>unique physics</strong> for movement"
       ]
     },
   ];
