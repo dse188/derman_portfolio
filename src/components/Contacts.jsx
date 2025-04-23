@@ -9,7 +9,7 @@ const Contacts = () => {
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Contact Form */}
+        {/* Contact Form  */}
         <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm p-8 rounded-xl border border-white/10">
           <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
             <FaPaperPlane className="text-blue-400" />
