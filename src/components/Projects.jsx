@@ -1,6 +1,7 @@
 import React from 'react';
 import ZenithSpire from '../assets/ZenithSpireThumbnail.png';
 import NeonVendetta from '../assets/NeonVendetta.png';
+import FitLog from '../assets/FitLogThumbnail.png';
 import { FaGamepad, FaCode, FaObjectGroup, FaCogs, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({ 
@@ -79,6 +80,18 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     
+    {
+      title: "FitLog",
+      description: "A comprehensive fitness tracking app that allows users to log workouts, track progress, and set fitness goals. Built with React Native and Firebase.",
+      image: FitLog,
+      projectLink: "https://fitlogdc.netlify.app/",
+      features: [
+        "Utilizes <strong class='text-blue-400'>React Native</strong> for cross-platform compatibility",
+        "Integrates <strong class='text-blue-400'>Firebase</strong> for real-time data storage",
+        "Includes a <strong class='text-blue-400'>custom workout tracker</strong> with progress visualization",
+        "Features a <strong class='text-blue-400'>user-friendly interface</strong> with intuitive navigation"
+      ]
+    },
     {
       title: "Neon Vendetta",
       description: "A story-driven 2D platformer with meticulously crafted levels where narrative and gameplay intertwine to create an immersive experience.",
